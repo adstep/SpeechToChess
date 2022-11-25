@@ -10,7 +10,7 @@ SpeechToChess.exe --help
 SpeechToChess 1.0.0
 Copyright (C) 2022 SpeechToChess
 
-  -e, --engine    (Default: Local) Set speech recognition engine.
+  -e, --engine    (Default: Local) Set speech recognition engine. [Local, Cognitive]
 
   --help          Display this help screen.
 
