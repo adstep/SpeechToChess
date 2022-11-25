@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Local": {
+      "commandName": "Project",
+      "commandLineArgs": "-e Local"
+    },
+    "Cognitive": {
+      "commandName": "Project",
+      "commandLineArgs": "-e Cognitive"
+    }
+  }
+}
