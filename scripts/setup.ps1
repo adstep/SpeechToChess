@@ -57,7 +57,7 @@ Read-Host "`tPress (enter) to continue"
 Write-Host "Click 'Train a new model'"
 Read-Host "`tPress (enter) to continue"
 
-Write-Host "Select 'General' scenario and latest baseline model"
+Write-Host "Select 'General' scenario, latest baseline model and set 'Custom model weight percent' to 100 in 'Advanced settings'"
 Read-Host "`tPress (enter) to continue"
 
 Write-Host "Choose 'Algebraic Notation Dataset'"
