@@ -26,7 +26,9 @@ All configuration is done via an ```appsettings.local.json``` that should be adj
 Configuration for Azure Cognitive Services. Only necessary if running using ```Cognitive``` Speech recognition engine. To setup the necessary resources, you can follow the run-script ```./scripts/setup.ps1```.
 
 **Key**: The Speech resource key the endpoint is associated with.
+
 **Region**: The Azure region the endpoint is associated with.
+
 **EndpointId**: The identifier of the endpoint.
 
 Example:
@@ -46,6 +48,7 @@ Example:
 Configuration for logging onto a specified Lichess account.
 
 **UserName**: Lichess userName.
+
 **Passowrd**: Lichess password.
 
 Example:
