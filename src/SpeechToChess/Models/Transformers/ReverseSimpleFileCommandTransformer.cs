@@ -2,7 +2,7 @@
 
 namespace SpeechToChess.Models.Transformers
 {
-    public class SimpleFileCommandTransformer : ICommandTransformer
+    public class ReverseSimpleFileCommandTransformer : ICommandTransformer
     {
         private static List<string> SimpleFiles = new List<string>()
         {
@@ -21,7 +21,7 @@ namespace SpeechToChess.Models.Transformers
             // Simplify simple files (a, b, c, ...)
             foreach (var file in SimpleFiles)
             {
-                input = Regex.Replace(input, $"({file}) ([0-9]+)", "$1$2");
+                input = Regex.Replace(input, $"({file})([0-9]+)", "$1 $2");
             }
 
             return input;

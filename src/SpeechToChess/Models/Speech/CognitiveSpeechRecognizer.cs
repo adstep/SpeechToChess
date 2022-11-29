@@ -52,7 +52,10 @@ namespace SpeechToChess.Models.Speech
 
         private void OnSpeechRecognized(object? sender, Microsoft.CognitiveServices.Speech.SpeechRecognitionEventArgs e)
         {
-            Recognized?.Invoke(this, new SpeechRecognitionEventArgs(e.Result.Text));
+            if (e.Result.Reason == ResultReason.RecognizedSpeech)
+            {
+                Recognized?.Invoke(this, new SpeechRecognitionEventArgs(e.Result.Text));
+            }
         }
 
         protected virtual void Dispose(bool disposing)
